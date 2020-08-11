@@ -12,8 +12,8 @@ To install run
 
 ### Laravel 
 
-First setup your database inside the .env file. Database name should be ```cars```. 
-After you have a working database with correct credentials run:
+First, setup your database(mysql) inside the .env file. Database name should be ```cars```. 
+After you have a working database with valid credentials run:
 
     php artisan migrate:fresh --seed
 
