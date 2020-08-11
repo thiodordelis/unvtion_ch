@@ -1,6 +1,5 @@
 <template>
   <div>
-  {{ form }}
   <form @submit.prevent="submit">
     <label for="name">
       name
