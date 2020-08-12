@@ -10,24 +10,25 @@ To install run
 
 ## Setup
 
-### Laravel 
+### Backend (Laravel)
 
 First, setup your database(mysql) inside the .env file. Database name should be ```cars```. 
 After you have a working database with valid credentials run:
 
     php artisan migrate:fresh --seed
+This will run all the nessecery migrations, plus it will seed the database with data for getting started.
 
 Then run 
 
     composer install
 
-Then inside the api folder run 
+Finally, inside the api folder run 
 
     php artisan serve
 
-Now you have an API endpoint running at ```http://127.0.0.1:8000```
+Now you can test your API at ```http://127.0.0.1:8000```
 
-API ENDPOINTS
+#### API ENDPOINTS
 
 * Get all cars: ```curl http://127.0.0.1:8000/api/cars```
 
@@ -36,6 +37,7 @@ API ENDPOINTS
 ### Frontend
 Inside the client folder run:
 
+    npm install
     npm run serve
 
 then visit ```http://127.0.0.1:8080```
